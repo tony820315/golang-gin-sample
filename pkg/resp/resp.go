@@ -5,9 +5,9 @@ import (
 )
 
 type ResponseBody struct {
-	Code    int         `json:"error_code"`
-	Message string      `json:"error_message"`
-	Result  interface{} `json:"result"`
+	Code    int         `json:"status"`
+	Message string      `json:"message"`
+	Result  interface{} `json:"data"`
 }
 
 func NewResponseBody(extendError ExtendError) ResponseBody {

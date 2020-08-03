@@ -21,8 +21,8 @@ type ExtendError interface {
 }
 
 type BaseError struct {
-	Code       int    `json:"error_code"`
-	Message    string `json:"error_message"`
+	Code       int    `json:"status"`
+	Message    string `json:"message"`
 	attachment interface{}
 }
 
